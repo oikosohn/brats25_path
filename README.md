@@ -1,3 +1,3 @@
-# Patch-level Classification of Histological Subregions in Glioblastoma with Low-Rank Adaptation
+# Patch-level Classification in Glioblastoma with LoRA
 
 TBD
