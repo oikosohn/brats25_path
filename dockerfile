@@ -6,6 +6,8 @@ ENV HF_HOME=/workspace/model
 RUN apt-get update -y
 
 COPY requirements.txt .
+COPY label_map.json .
+
 RUN pip3 install --upgrade pip && \
     pip3 install --no-cache-dir -r requirements.txt
 
