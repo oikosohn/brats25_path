@@ -180,7 +180,7 @@ def main(args):
     
     if args.use_aug:
         aug_transform = T.Compose([
-            T.RandomApply([T.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1)], p=0.5),
+            T.RandomApply([T.ColorJitter(brightness=0.05, contrast=0.05, saturation=0.05, hue=0.02)], p=0.5),
             T.RandomApply([T.RandomHorizontalFlip(p=1.0)], p=0.5),
             T.RandomApply([T.RandomVerticalFlip(p=1.0)], p=0.5),
             T.RandomChoice([
